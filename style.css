@@ -1,0 +1,102 @@
+/* Options Styles */
+.option {
+    transition: all 0.3s ease; /* Transition pour une interaction fluide */
+    padding: 10px; /* Ajout d'un espacement interne */
+    border: 1px solid #ccc; /* Bordure pour les options */
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer; /* Pointeur pour indiquer que c'est cliquable */
+}
+
+.option:hover:not(.answered) {
+    background-color: #f3f4f6; /* Couleur de fond au survol */
+}
+
+.correct {
+    background-color: #d1fae5; /* Couleur pour les réponses correctes */
+}
+
+.incorrect {
+    background-color: #fee2e2; /* Couleur pour les réponses incorrectes */
+}
+
+.disabled {
+    opacity: 0.5; /* Réduction de l'opacité pour les options désactivées */
+    pointer-events: none; /* Empêcher l'interaction avec les options désactivées */
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Dégradé de fond */
+    font-family: 'Arial', sans-serif; /* Police de base */
+}
+
+/* Start Container */
+#start-container {
+    background-color: rgba(0, 123, 255, 0.1); /* Fond semi-transparent */
+    border: 2px solid #007bff; /* Bord bleu */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Quiz Container */
+#quiz-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+    position: relative; /* Position relative pour les éléments positionnés */
+    padding-bottom: 60px; /* Espacement en bas pour éviter le chevauchement avec les boutons */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+}
+
+/* Navigation Styles */
+#navigation {
+    display: flex; /* Utiliser flex pour aligner les boutons */
+    align-items: center; /* Centrer verticalement les éléments */
+    justify-content: space-between; /* Créer de l'espace entre les boutons */
+    padding: 0 20px; /* Espacement latéral */
+    margin-top: 20px; /* Espacement supérieur pour séparer des autres éléments */
+}
+
+/* Next Button */
+#next-button {
+    margin: 0 auto; /* Centrer le bouton "Next Question" */
+    padding: 10px 20px; /* Espacement interne */
+    background-color: #007bff; /* Couleur de fond bleu */
+    color: white; /* Couleur du texte en blanc */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Pointeur pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Transition pour la couleur de fond */
+}
+
+#next-button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
+/* Reset Button */
+#reset-button {
+    padding: 10px 20px; /* Espacement interne */
+    background-color: #ffc107; /* Couleur de fond jaune */
+    color: white; /* Couleur du texte en blanc */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Pointeur pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Transition pour la couleur de fond */
+}
+
+#reset-button:hover {
+    background-color: #e0a800; /* Couleur au survol */
+}
+
+/* Timer Display */
+#timer-display {
+    font-size: 1.5rem; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement inférieur */
+}
+
+/* Feedback Styles */
+#feedback {
+    margin-top: 20px; /* Espacement supérieur pour le feedback */
+}

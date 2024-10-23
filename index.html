@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Specialist Quiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-gray-200 to-gray-300 min-h-screen p-4">
+    <div class="max-w-3xl mx-auto">
+        <!-- Start Container -->
+        <div id="start-container" class="bg-blue-200 rounded-lg shadow-lg p-6 text-center mb-6">
+            <h1 class="text-2xl font-bold mb-4">Bienvenue au Quiz AI Specialist!</h1>
+            <p class="mb-4">Testez vos connaissances sur l'intelligence artificielle et découvrez vos compétences.</p>
+            <button id="start-button" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                Démarrer le Quiz
+            </button>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" class="bg-white rounded-lg shadow-lg p-6 hidden">
+            <div class="mb-6">
+                <div id="timer-display" class="text-right text-xl font-bold mb-4"></div>
+                <h1 id="quiz-title" class="text-2xl font-bold mb-2">AI Specialist Exam</h1>
+                <p id="question-counter" class="text-sm text-gray-600"></p>
+            </div>
+            
+            <!-- Question Section -->
+            <div id="question-section">
+                <p id="question-text" class="text-lg mb-4"></p>
+                <div id="options-container" class="space-y-2"></div>
+            </div>
+
+            <!-- Explanation Section -->
+            <div id="explanation-section" class="mt-4 hidden">
+                <div id="explanation-text" class="p-4 rounded-lg border"></div>
+            </div>
+
+            <!-- Navigation -->
+            <div id="navigation" class="mt-6 flex items-center justify-between">
+                <span id="score-display" class="text-sm text-gray-600"></span>
+                <button id="next-button" class="hidden px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                     Question Suivante
+                </button>
+                <button id="reset-button" class="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition">
+                    Réinitialiser le Quiz
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-container" class="hidden bg-white rounded-lg shadow-lg p-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Résultats du Quiz</h2>
+            <p id="final-score" class="text-xl mb-4"></p>
+            <p id="percentage" class="text-lg mb-6"></p>
+            <div id="feedback" class="mb-6 p-4 rounded-lg"></div>
+            <button id="restart-button" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                Recommencer le Quiz
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
