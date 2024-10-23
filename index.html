@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Specialist Quiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: rgba(173, 216, 230, 0.5); /* Light blue highlight */
+            border: 2px solid #007BFF; /* Blue border for emphasis */
+        }
+    </style>
 </head>
 <body class="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 min-h-screen flex items-center justify-center p-4">
     <div class="max-w-3xl w-full mx-auto space-y-6">
-
         <!-- Start Container -->
         <div id="start-container" class="bg-gradient-to-tr from-blue-400 to-purple-500 text-white rounded-lg shadow-lg p-8 text-center transform transition-all duration-500 hover:scale-105">
             <h1 class="text-4xl font-extrabold mb-4 animate-pulse">Welcome to the AI Specialist Quiz!</h1>
             <p class="mb-6 text-lg font-medium">Test your knowledge of artificial intelligence and discover your skills.</p>
+            <div class="mb-4">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="scoreOption" value="show" checked class="mr-2">
+                    Show score during the quiz
+                </label>
+                <label class="inline-flex items-center ml-4">
+                    <input type="radio" name="scoreOption" value="hide" class="mr-2">
+                    Hide score during the quiz
+                </label>
+            </div>
             <button id="start-button" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg rounded-lg shadow-md transition transform hover:scale-105">
                 Start the Quiz
             </button>
